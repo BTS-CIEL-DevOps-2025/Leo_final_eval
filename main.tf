@@ -14,3 +14,5 @@ resource "azurerm_storage_account" "leo_final_eval_rg" {
     environment = "staging"
   }
 }
+
+# commentaire pour tester la pull request
