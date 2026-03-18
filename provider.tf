@@ -16,7 +16,7 @@ terraform {
 
   backend "azurerm" {
 
-    resource_group_name  = "leo_final_eval_rg"
+    resource_group_name  = "resources_partagees"
 
     storage_account_name = "btsciel2finaleval"
 
