@@ -1,0 +1,33 @@
+name: leo_final_eval_rg
+run-name: ${{ github.actor }} is learning GitHub Actions
+
+on:
+  pull_request:
+
+jobs: 
+  terraform_plan:
+    name : etape_tf_plan
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout du repo
+        uses: actions/checkout@v5
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install bats
+        run: npm install -g bats
+
+      - name: Check bats version
+        run: bats -v
+
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v3
+
+      - name: Terraform Init
+        run: terraform init
+
+      - name: Terraform Plan 
+        run: terraform plan
