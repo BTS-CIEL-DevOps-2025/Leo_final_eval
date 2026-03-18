@@ -1,4 +1,4 @@
-resource "azurerm_resource_group" "leo_final_eval_rg" {
+resource "azurerm_resource_group" "resources_partagees" {
   name     = "leo_final_eval_rg"
   location = "France Central"
 }
@@ -14,3 +14,5 @@ resource "azurerm_storage_account" "leo_final_eval_rg" {
     environment = "staging"
   }
 }
+
+# commentaire pour tester la pull request test2
