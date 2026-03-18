@@ -15,4 +15,4 @@ resource "azurerm_storage_account" "leo_final_eval_rg" {
   }
 }
 
-# commentaire pour tester la pull request
+# commentaire pour tester la pull request test2
